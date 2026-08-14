@@ -9,14 +9,25 @@
 - 新项目初始化规则应写入 `skills/project-init-workflow/SKILL.md` 或模板文件。
 - 项目长期上下文文档规则应写入 `skills/project-context-docs/SKILL.md`。
 - GitHub Issue / PR 协作规则应写入 `skills/github-project-flow/SKILL.md`。
+- 面向用户的输出规范应写入 `skills/output-style/SKILL.md`。
 - OpenSpec 切片流程应写入 `schemas/ai-solo-workflow/`。
 
-## 中文写作
+## 输出规范
 
-- README、docs、skills、OpenSpec artifact、Issue、PR、review comment 默认使用简体中文。
-- 代码 comment 默认使用简体中文。
-- API、REST、provider、OpenSpec、webhook、job、status、字段名、错误码、库名、框架名、协议名和其他固定技术术语保留英文。
-- PR title、PR body、review comment 和 issue comment 使用自然中文表达，不使用英文模板腔。
+面向用户的输出（会话回复、README、docs、Issue、PR、review comment）必须遵守 `skills/output-style/SKILL.md`。这是无障碍要求，不是风格偏好。核心 10 条：
+
+1. 默认简体中文；API、字段名、错误码、库名、框架名、协议名等固定技术术语保留英文原词。
+2. 一次只让读者同时持有 3 项以内的新概念。
+3. 判断或答案放第一行。
+4. 信息写在用它的那一刻，不写"如前所述"。
+5. 每轮开头给位置：刚做完什么、现在在哪、下一步做什么。
+6. 待决策事项 2 个以内，每个带推荐值。
+7. 用日常词；新概念首次出现时用一句人话定义。
+8. 一句一意，主谓宾直陈。
+9. 判断直述，不写"我认为""换句话说""需要注意的是"。
+10. 映射关系用表格；代码块只装能运行的代码或命令。
+
+代码 comment 默认使用简体中文。给子代理的指令和内部记录不受本节约束，写给模型读的文档用 `writing-for-agents`。
 
 ## GitHub 协作
 

@@ -15,7 +15,7 @@
 从目标项目根目录运行：
 
 ```bash
-bunx skills add lushangkan/lushangkan-workflow --full-depth --skill github-project-flow git-master project-context-docs project-init-workflow
+bunx skills add lushangkan/lushangkan-workflow --full-depth --skill output-style github-project-flow git-master project-context-docs project-init-workflow
 ```
 
 需要安装全部 skills 时，也可以使用：
@@ -37,6 +37,7 @@ skills/
   git-master/              # Git 提交、rebase 与历史调查 skill
   github-project-flow/     # GitHub Issue / PR 协作 skill
   project-context-docs/    # 项目长期上下文文档读写 skill
+  output-style/            # 面向用户的中文输出无障碍规范 skill
   project-init-workflow/   # 新项目初始化 skill
 templates/
   AGENTS.md                # 新项目根 AGENTS.md 模板
@@ -45,9 +46,8 @@ templates/
 
 ## 全局原则
 
-- 默认使用简体中文写作。
-- GitHub Issue、PR title、PR body、review comment 默认使用简体中文。
-- 代码注释默认使用简体中文；API、字段名、错误码、协议名、库名等固定技术标识保留英文。
+- 面向用户的输出遵守 `output-style` skill：判断先行、一次不超过 3 项新概念、用日常词、决策点不超过 2 个。这是无障碍要求。
+- 默认使用简体中文写作；代码注释默认简体中文；API、字段名、错误码、协议名、库名等固定技术标识保留英文。
 - 项目级描述放在 OpenSpec 外部。
 - 项目长期上下文文档按需读取和懒创建，由 `project-context-docs` skill 负责。
 - OpenSpec change 只描述一个可独立设计、实现、验证和归档的垂直切片。

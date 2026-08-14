@@ -9,12 +9,22 @@
 - OpenSpec change 只用于更小的垂直切片；每个切片都必须能独立设计、实现、验证和归档。
 - 不要把整个项目描述、产品愿景或平台级路线图塞进一个 OpenSpec change。
 
-## 中文写作
+## 输出规范
 
-- README、PROJECT、docs、OpenSpec artifact、代码审查意见、Issue 内容、PR 标题和 PR 描述默认使用简体中文。
-- 代码 comment 默认使用简体中文。
-- API、REST、provider、OpenSpec、webhook、job、status、字段名、错误码、库名、框架名、协议名和其他固定技术术语保留英文。
-- PR title、PR body、review comment 和 issue comment 必须使用自然中文表达。
+面向用户的输出（会话回复、README、PROJECT、docs、OpenSpec artifact、Issue、PR、review comment）必须遵守项目安装的 `output-style` skill。这是无障碍要求，不是风格偏好。核心 10 条：
+
+1. 默认简体中文；API、字段名、错误码、库名、框架名、协议名等固定技术术语保留英文原词。
+2. 一次只让读者同时持有 3 项以内的新概念。
+3. 判断或答案放第一行。
+4. 信息写在用它的那一刻，不写"如前所述"。
+5. 每轮开头给位置：刚做完什么、现在在哪、下一步做什么。
+6. 待决策事项 2 个以内，每个带推荐值。
+7. 用日常词；新概念首次出现时用一句人话定义。
+8. 一句一意，主谓宾直陈。
+9. 判断直述，不写"我认为""换句话说""需要注意的是"。
+10. 映射关系用表格；代码块只装能运行的代码或命令。
+
+代码 comment 默认使用简体中文。给子代理的指令和内部记录不受本节约束。
 
 ## Git 与 GitHub
 
