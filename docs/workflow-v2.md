@@ -1,7 +1,10 @@
 # Workflow v2 总稿
 
-> 状态：设计已定稿（2026-08-20）。下一步：逐项实施（clone fork、装引用项、改 skill）。
+> 状态：**已实施**（2026-08-20 当天落地）。
 > 新会话接手读这份 + `docs/research/` 即可，不用重翻历史。
+>
+> 实施结果：fork `lushangkan/skills` 已建并完成 Multica 化改造（to-spec、to-tickets、implement 黑盒门、behavior-validator、kiss-review、plan-understanding-quiz），经 `scripts/link-skills.sh` 符号链接激活到 `~/.agents/skills` 和 `~/.claude/skills`；output-style 已融合 attention-control（43 条）；pstack 选装 5 个 + effective-html + governor + scheduler 已装；Multica CLI 0.4.31 已装并复用 desktop profile 认证，daemon 运行中，三个角色 Agent（OMP Implementer / PI Researcher / Claude Reviewer）已建，Project「workflow v2 落地」已建，首票 SOUL-1 已走通全链路（票 → 分支 → PR lushangkan-workflow#8 → in_review）。票前缀实际是 SOUL-N（workspace 名 Soulhub），正文里的 MUL-N 按 SOUL-N 读。
+> 待办：governor 的 Prototype 档禁单测与本仓 TDD 冲突，AGENTS.md 已写「tdd 赢」；Multica Cloud 数据区域/retention 未确认；daemon 安全边界（专用 OS 用户/容器）未建。
 
 ## 1. 底座与原则
 
